@@ -20,10 +20,11 @@ It requires Android Studio 3.6 or newer
 - [libc++_shared r20](https://developer.android.com/ndk/downloads/older_releases): you can get libc++_shared.so file for each ABI in the sources/cxx-stl/llvm-libc++/libs folder. (Included shared library for C++ is for the platform Mac OS X)
 
 ## Steps to run project
-#### Build 
-If the build complains about side by side NDK version, install a specified version of NDK. 
-
-Tools -> SDK Manager -> SDK Tools -> Check Show Package Details -> Install a specific NDK (Side by side) version
-
+#### Build  
+Install the NDK (Side by side)
+```
+Tools -> SDK Manager -> SDK Tools -> Check 'Show Package Details' -> Install the NDK (Side by side) version 20.0.5594570
+```
+After installing the NDK, build the project
 #### Run
 If you see the empty activity application, you are done. 
