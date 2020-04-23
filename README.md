@@ -21,7 +21,7 @@ It requires Android Studio 3.6 or newer
 
 ## Steps to run project
 #### Build 
-If the build complains about side by side NDK version, install specified version of NDK. 
+If the build complains about side by side NDK version, install a specified version of NDK. 
 
 Tools -> SDK Manager -> SDK Tools -> Check Show Package Details -> Install a specific NDK (Side by side) version
 
