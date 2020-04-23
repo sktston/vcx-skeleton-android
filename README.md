@@ -5,7 +5,7 @@ You can just start to use LibVCX APIs in the project without any compilation iss
 
 ## Prerequisites
 #### Git Large File Storage
-You need to install [Git LFS](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) to clone this repository because it contains large native libraries.
+Before you clone this repository install [Git LFS](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) because it contains large native library files.
 To use [Homebrew](http://brew.sh/) on MacOS run
 ```
 $ brew install git-lfs
