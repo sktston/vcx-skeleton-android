@@ -1,1 +1,12 @@
-# vcx-skeleton-android
+# LibVCX Skeleton Android Project
+
+This is the Android skeleton project to use [LibVCX for Java Wrapper](https://github.com/hyperledger/indy-sdk/tree/master/vcx/wrappers/java) in your Android project.
+It contains all necessary dependencies and native libraries such as libindy.so and libvcx.so under the jniLibs folder. It also contains some boilerplate code to use LibVCX for Java Wrapper.
+You can just start to use LibVCX APIs in the project without any compilation issues.
+
+## Native Libraries included
+
+- [libindy stable v1.15.0](https://repo.sovrin.org/android/libindy/stable/1.15.0/)
+- [libvcx stable v0.8.0](https://repo.sovrin.org/android/libvcx/stable/0.8.0/)
+- [libjnidispatch v4.5.1](https://github.com/java-native-access/jna/tree/4.5.1/lib/native)
+- [libc++_shared r21b](https://developer.android.com/ndk/downloads): you can get libc++_shared.so file for each ABI in the sources/cxx-stl/llvm-libc++/libs folder
