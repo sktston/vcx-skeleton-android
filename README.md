@@ -11,10 +11,19 @@ To use [Homebrew](http://brew.sh/) on MacOS run
 brew install git-lfs
 ```
 #### Android Studio
-It needs Android Studio 3.6 or newer
+It requires Android Studio 3.6 or newer
 
 ## Native Libraries included
 - [libindy stable v1.15.0](https://repo.sovrin.org/android/libindy/stable/1.15.0/)
 - [libvcx stable v0.8.0](https://repo.sovrin.org/android/libvcx/stable/0.8.0/)
-- [libjnidispatch v4.5.1](https://github.com/java-native-access/jna/tree/4.5.1/lib/native)
-- [libc++_shared r21b](https://developer.android.com/ndk/downloads): you can get libc++_shared.so file for each ABI in the sources/cxx-stl/llvm-libc++/libs folder.
+- [libjnidispatch v4.5.2](https://github.com/java-native-access/jna/tree/4.5.2/lib/native)
+- [libc++_shared r20](https://developer.android.com/ndk/downloads/older_releases): you can get libc++_shared.so file for each ABI in the sources/cxx-stl/llvm-libc++/libs folder. (Included shared library for C++ is for the platform Mac OS X)
+
+## Steps to run project
+#### Build 
+If the build complains about side by side NDK version, install specified version of NDK. 
+
+Tools -> SDK Manager -> SDK Tools -> Check Show Package Details -> Install a specific NDK (Side by side) version
+
+#### Run
+If you see the empty activity application, you are done. 
