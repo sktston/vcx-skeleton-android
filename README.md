@@ -8,7 +8,8 @@ You can just start to use LibVCX APIs in the project without any compilation iss
 You need to install [Git LFS](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) to clone this repository because it contains large native libraries.
 To use [Homebrew](http://brew.sh/) on MacOS run
 ```
-brew install git-lfs
+$ brew install git-lfs
+$ git lfs install
 ```
 #### Android Studio
 It requires Android Studio 3.6 or newer
