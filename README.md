@@ -5,10 +5,11 @@ You can just start to use LibVCX APIs in the project without any compilation iss
 
 ## Prerequisites
 #### Git Large File Storage
-You need to install [Git LFS](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) to clone this repository because it contains large native libraries.
+Before you clone this repository install [Git LFS](https://help.github.com/en/github/managing-large-files/installing-git-large-file-storage) because it contains large native library files.
 To use [Homebrew](http://brew.sh/) on MacOS run
 ```
-brew install git-lfs
+$ brew install git-lfs
+$ git lfs install
 ```
 #### Android Studio
 It requires Android Studio 3.6 or newer
@@ -20,10 +21,11 @@ It requires Android Studio 3.6 or newer
 - libc++_shared r20: If your platform is MacOS You can get libc++_shared.so file for each ABI in the `~/Library/Android/sdk/ndk/20.0.5594570/sources/cxx-stl/llvm-libc++/libs` folder after instlling NDK in the next step. (Included shared library for C++ is for the platform MacOS)
 
 ## Steps to run project
-#### Build 
-If the build complains about side by side NDK version, install a specified version of NDK. 
-
-Tools -> SDK Manager -> SDK Tools -> Check Show Package Details -> Install a specific NDK (Side by side) version
-
+#### Build  
+Install the NDK (Side by side)
+```
+Tools -> SDK Manager -> SDK Tools -> Check 'Show Package Details' -> Install the NDK (Side by side) version 20.0.5594570
+```
+After installing the NDK, build the project
 #### Run
 If you see the empty activity application, you are done. 
