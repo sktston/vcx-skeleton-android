@@ -17,7 +17,7 @@ It requires Android Studio 3.6 or newer
 ## Native Libraries included
 - [libindy stable v1.15.0](https://repo.sovrin.org/android/libindy/stable/1.15.0/)
 - [libvcx stable v0.8.0](https://repo.sovrin.org/android/libvcx/stable/0.8.0/)
-- [libjnidispatch v4.5.2](https://github.com/java-native-access/jna/tree/4.5.2/lib/native): You can exract 
+- [libjnidispatch v4.5.2](https://github.com/java-native-access/jna/tree/4.5.2/lib/native): You can exract `libjnidispatch.so` from `jar` file using, for example `unzip android-x86.jar libjnidispatch.so` command. Alternatively, you may get a file in the local gradle folder (You can get a location of file in the Android Studio > Project tab > expand External Libraries > expand net.java.dev.jna:jna:4.5.2@aar > right click on classes.jar > Reveal in Finder > they are under `jni` folder)
 - libc++_shared r20: If your platform is MacOS You can get libc++_shared.so file for each ABI in the `~/Library/Android/sdk/ndk/20.0.5594570/sources/cxx-stl/llvm-libc++/libs` folder after instlling NDK in the next step. (Included shared library for C++ is for the platform MacOS)
 
 ## Steps to run project
