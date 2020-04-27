@@ -15,6 +15,8 @@ $ git lfs install
 It requires Android Studio 3.6 or newer
 
 ## Native Libraries included
+All libraries are included in this project, but if you want to get those libraries by yourself, please refer to the below.
+
 - [libindy stable v1.15.0](https://repo.sovrin.org/android/libindy/stable/1.15.0/)
 - [libvcx stable v0.8.0](https://repo.sovrin.org/android/libvcx/stable/0.8.0/)
 - [libjnidispatch v4.5.2](https://github.com/java-native-access/jna/tree/4.5.2/lib/native): You can exract `libjnidispatch.so` from `jar` file using, for example `unzip android-x86.jar libjnidispatch.so` command. Alternatively, you may get a file in the local gradle folder (You can get a location of file in the Android Studio > Project tab > expand External Libraries > expand `net.java.dev.jna:jna:4.5.2@aar` > right click on classes.jar > Reveal in Finder > they are under `jni` folder)
