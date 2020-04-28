@@ -7,8 +7,16 @@ You can just start to use LibVCX APIs in the project without any compilation iss
 #### Android Studio
 It requires Android Studio 3.6 or newer
 
+#### Create Native Libraries
+Run the script. This will download all native libraries needed for this project, and create the jniLib folder with required ABIs
+```
+$ ./populate_libraries.sh
+``` 
+
+**Note**: You can change the version numbers for `libindy` and `libvcx` in the script `populate_libraries.sh`
+
 ## Native Libraries included
-All libraries will be available after running the script `populate_libraries.sh` for this project, but if you want to get those libraries by yourself, please refer to the below.
+All libraries will be available after running the script, but if you want to get those libraries by yourself, please refer to the below.
 
 - [libindy stable v1.15.0](https://repo.sovrin.org/android/libindy/stable/1.15.0/)
 - [libvcx stable v0.8.0](https://repo.sovrin.org/android/libvcx/stable/0.8.0/)
@@ -17,10 +25,7 @@ All libraries will be available after running the script `populate_libraries.sh`
 
 ## Steps to run project
 #### Build  
-Run the script `populate_libraries.sh` which will download all native libraries needed for this project, and create the jniLib folder with required ABIs
-**Note**: You can change the version numbers for `libindy` and `libvcx` in the script `populate_libraries.sh`
-
-After populating all necessary native libraries, build the project
+After populating all necessary native libraries in the prerequisites section, build the project
 
 #### Run
 If you see the empty activity application, you are done. 
