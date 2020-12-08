@@ -4,7 +4,7 @@ workdir=output
 jnadir=${workdir}/jna
 libsdir=${workdir}/libs
 jniLibs=${workdir}/jniLibs
-vcx_version=0.13.1
+vcx_version=0.14.2
 
 # mkdir -p ${jniLibs}/armeabi-v7a
 # mkdir -p ${jniLibs}/arm64-v8a
@@ -15,6 +15,7 @@ mkdir -p ${jnadir}
 
 download_prebuilt_vcx(){
    pushd ${libsdir}
+   #wget "https://github.com/hyperledger/aries-vcx/releases/download/${vcx_version}/libvcx-android-${vcx_version}-device.aar"
    wget "https://github.com/hyperledger/aries-vcx/releases/download/${vcx_version}/libvcx-android-${vcx_version}-emulator.aar"
    popd
 }
@@ -26,7 +27,7 @@ download_ndk(){
         wget -O ndk_r20.zip "https://dl.google.com/android/repository/android-ndk-r20-darwin-x86_64.zip"
     elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
         echo "Downloading NDK for Linux"
-        wget -O ndk_r21b.zip "https://dl.google.com/android/repository/android-ndk-r21b-linux-x86_64.zip"
+        wget -O ndk_r20.zip "https://dl.google.com/android/repository/android-ndk-r20-linux-x86_64.zip"
     fi
     unzip ndk_r20.zip
     popd 
